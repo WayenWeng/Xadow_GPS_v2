@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+  Copyright : 2012 Freescale, Inc. All Rights Reserved.
+
+  This configuration file is a standard interchange file that's format is maintained
+  by Freescale, Inc. The configuration file is a derivative work
+  of the Processor Expert Software technology licensed for use by customers
+  as defined as SOFTWARE in the product's End User License Agreement. This file
+  and format are free to use and distribute for read-only purposes. You do not have
+  the right to create these files or modify this format or use for any purposes other
+  than interchange with the Processor Expert Software technology.
+
+  THIS SOFTWARE IS PROVIDED "AS IS".
+
+  NO WARRANTIES, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT
+  LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE APPLY TO THIS SOFTWARE. IN NO EVENT WILL FREESCALE BE LIABLE, WHETHER
+  IN CONTRACT, TORT, OR OTHERWISE, FOR ANY INCIDENTAL, SPECIAL, INDIRECT,
+  CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR
+  ANY LOSS OF USE, LOSS OF TIME, INCONVENIENCE, COMMERCIAL LOSS, OR LOST PROFITS,
+  SAVINGS, OR REVENUES TO THE FULL EXTENT SUCH MAY BE DISCLAIMED BY LAW.
+
+-->
+<export xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ProjectInfoDescription.xsd">
+  <PROCESSOR>
+    <DeviceID>MKL02Z32xxx4</DeviceID>
+    <CoreNum>1</CoreNum>
+    <Cores>
+      <Core>
+        <CoreSet>Cortex-M0+</CoreSet>
+      </Core>
+    </Cores>
+    <SRAMsize>4096</SRAMsize>
+    <FLASHsize>32k</FLASHsize>
+  </PROCESSOR>
+  <PATHS>
+    <LinkerCommandFile>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Project_Settings\Linker_Files\ProcessorExpert.ld</LinkerCommandFile>
+    <IncludePaths>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\sim\MKL02Z4\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\clock\MKL02Z4\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\inc\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\osa\inc\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\utilities\inc\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\inc\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\CMSIS\Include\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\include\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\startup\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\SDK\platform\devices\MKL02Z4\startup\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\</Path>
+    </IncludePaths>
+    <SourceCodePaths>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\startup\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\src\i2c\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\gpio\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\i2c\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\lpsci\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\mcg\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\osc\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\port\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\sim\MKL02Z4\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\osa\src\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\clock\MKL02Z4\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\clock\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\interrupt\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Static_Code\System\</Path>
+      <Path>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\startup\gcc\</Path>
+    </SourceCodePaths>
+  </PATHS>
+  <FILES>
+    <GeneratedCs>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\Cpu.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\clockMan1.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\hardware_init.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\i2cCom1.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\osa1.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\pin_mux.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\startup\system_MKL02Z4.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\startup.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\src\i2c\fsl_i2c_common.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\src\i2c\fsl_i2c_master_driver.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\src\i2c\fsl_i2c_shared_function.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\src\i2c\fsl_i2c_slave_driver.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\gpio\fsl_gpio_hal.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\i2c\fsl_i2c_hal.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\lpsci\fsl_lpsci_hal.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\mcg\fsl_mcg_hal.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\mcg\fsl_mcg_hal_modes.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\osc\fsl_osc_hal.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\port\fsl_port_hal.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\sim\MKL02Z4\fsl_sim_hal_MKL02Z4.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\osa\src\fsl_os_abstraction_bm.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\clock\MKL02Z4\fsl_clock_MKL02Z4.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\clock\fsl_clock_manager.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\clock\fsl_clock_manager_common.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\interrupt\fsl_interrupt_manager.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\Events.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\gpio.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\i2c.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\main.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\uart.c</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Static_Code\System\PE_low_level_init.c</PathName>
+    </GeneratedCs>
+    <GeneratedHs>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\Cpu.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\PE_low_level_init.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\SDK\platform\devices\MKL02Z4\startup\system_MKL02Z4.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\board.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\clockMan1.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\i2cCom1.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\osa1.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Generated_Code\pin_mux.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\CMSIS\Include\arm_common_tables.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\CMSIS\Include\arm_const_structs.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\CMSIS\Include\arm_math.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\CMSIS\Include\core_cm0plus.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\CMSIS\Include\core_cmFunc.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\CMSIS\Include\core_cmInstr.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\CMSIS\Include\core_cmSimd.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\include\MKL02Z4.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\include\MKL02Z4_extension.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\include\MKL02Z4_features.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\include\fsl_bitaccess.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\fsl_device_registers.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\startup.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\inc\fsl_i2c_master_driver.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\inc\fsl_i2c_shared_function.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\drivers\inc\fsl_i2c_slave_driver.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\fsl_gpio_hal.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\fsl_i2c_hal.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\fsl_lpsci_hal.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\fsl_mcg_hal.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\fsl_mcg_hal_modes.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\fsl_osc_hal.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\fsl_port_hal.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\inc\fsl_sim_hal.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\hal\src\sim\MKL02Z4\fsl_sim_hal_MKL02Z4.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\osa\inc\fsl_os_abstraction.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\osa\inc\fsl_os_abstraction_bm.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\inc\fsl_clock_manager.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\inc\fsl_interrupt_manager.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\system\src\clock\MKL02Z4\fsl_clock_MKL02Z4.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\utilities\inc\fsl_misc_utilities.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\Events.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\gpio.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\i2c.h</PathName>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\Sources\uart.h</PathName>
+    </GeneratedHs>
+    <GeneratedASMs>
+      <PathName>D:\Freescale\WorkSpace\xadow_phone_gps_v2\SDK\platform\devices\MKL02Z4\startup\gcc\startup_MKL02Z4.S</PathName>
+    </GeneratedASMs>
+  </FILES>
+  <OPTIONS>
+    <BuildOptions>
+      <CCoptList>
+        <Option>-D CPU_MKL02Z32VFG4</Option>
+        <Option>-D FSL_OSA_BM_TIMER_CONFIG=2</Option>  
+      </CCoptList>
+    </BuildOptions>
+  </OPTIONS>
+</export>
