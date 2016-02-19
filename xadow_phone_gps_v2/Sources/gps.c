@@ -72,7 +72,7 @@ void gps_data_convert(void)
 	}
 
 	Data = 0;
-	for(i=2;i<10;i++)
+	for(i=3;i<10;i++)
 	{
 		if(i == 5)continue;
 		Data = Data * 10 + GPS_RMC_Data.Longitude[i] - '0';
