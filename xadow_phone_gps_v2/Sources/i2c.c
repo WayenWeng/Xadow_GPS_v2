@@ -20,6 +20,8 @@ uint8_t i2c_send_count = 0;
 uint8_t i2c_comand = 0;
 
 extern unsigned char sys_gpio_test;
+extern unsigned char LatitudeNew[9];    // dd.mmmmmm
+extern unsigned char LongitudeNew[10];  // ddd.mmmmmm
 
 
 static void i2c_data_copy(uint8_t* strDes, uint8_t* strSrc, uint8_t num)
@@ -172,10 +174,12 @@ void i2c_slave_callback(uint8_t instance,i2c_slave_event_t i2cEvent,void *param)
 
 				case GPS_LATITUDE_ID:
 					if(i2c_send_count == (GPS_LATITUDE_SIZE+2))i2c_send_count = 0;
+					if(gps_recive_ok())gps_data_convert();
 				break;
 
 				case GPS_LONGITUDE_ID:
 					if(i2c_send_count == (GPS_LONGITUDE_SIZE+2))i2c_send_count = 0;
+					if(gps_recive_ok())gps_data_convert();
 				break;
 
 				default:
@@ -225,7 +229,7 @@ void i2c_slave_callback(uint8_t instance,i2c_slave_event_t i2cEvent,void *param)
 				case GPS_LATITUDE_ID: // Î³¶È
 					TxBuff[0] = GPS_LATITUDE_ID;
 					TxBuff[1] = GPS_LATITUDE_SIZE;
-					i2c_data_copy(TxBuff + 2, GPS_RMC_Data.Latitude, 9);
+					i2c_data_copy(TxBuff + 2, LatitudeNew, 9);
 				break;
 
 				case GPS_NS_ID:
@@ -237,7 +241,7 @@ void i2c_slave_callback(uint8_t instance,i2c_slave_event_t i2cEvent,void *param)
 				case GPS_LONGITUDE_ID: // ¾­¶È
 					TxBuff[0] = GPS_LONGITUDE_ID;
 					TxBuff[1] = GPS_LONGITUDE_SIZE;
-					i2c_data_copy(TxBuff + 2, GPS_RMC_Data.Longitude, 10);
+					i2c_data_copy(TxBuff + 2, LongitudeNew, 10);
 				break;
 
 				case GPS_EW_ID:

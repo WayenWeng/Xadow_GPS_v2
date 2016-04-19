@@ -57,20 +57,13 @@ int main(void)
 
 	while(1)
 	{
-
 		// Wait to receive input data
-		if (kStatus_LPSCI_Success == LPSCI_HAL_ReceiveDataPolling(UART0, &SBUF,1))
+		if(kStatus_LPSCI_Success == LPSCI_HAL_ReceiveDataPolling(UART0, &SBUF,1))
 		{
 			// Echo received character
-			//LPSCI_HAL_SendDataPolling(UART0, &SBUF, 1);
+			// LPSCI_HAL_SendDataPolling(UART0, &SBUF, 1);
 			gps_parser();
 		}
-
-		if(gps_recive_ok())
-		{
-			gps_data_convert();
-		}
-
 		GPIO_Test_for_TE();
 	}
 }
